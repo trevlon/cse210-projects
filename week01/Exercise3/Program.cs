@@ -7,7 +7,7 @@ class Program
     {
         // Console.WriteLine("Hello World! This is the Exercise3 Project.");
         Random randomGenerator = new Random(); // Makes a random number generator
-        int number = randomGenerator.Next(1,100); // Range from 1 to 100
+        int number = randomGenerator.Next(1,101); // Range from 1 to 100
     
         int guess = 0;
         
