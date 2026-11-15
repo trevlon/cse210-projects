@@ -31,7 +31,8 @@ public class ScriptureTrial
          Random generateRandomNumber = new Random();
          if (numbersToHide > availableWords)
         {
-            numbersToHide = _text.Count;
+            // numbersToHide = _text.Count;
+            numbersToHide = availableWords;
         }
 
          for(int i=0; i < numbersToHide; i++)
@@ -43,7 +44,10 @@ public class ScriptureTrial
             {
                index = generateRandomNumber.Next(_text.Count);
             }
+            if(!_text[index].IsHidden())
+            {
              _text[index].Hide();
+            }
         }
     } 
 

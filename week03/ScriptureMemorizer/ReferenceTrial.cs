@@ -21,8 +21,9 @@ public class ReferenceTrial
     }
 
     public string GetDisplayText()
-    {
+    {        
         return $"{_book} {_chapter}:{_startVerse}-{_endVerse}";
+         
     }
 
 }
