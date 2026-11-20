@@ -1,21 +1,21 @@
 public class Customer
 {
-    private string _customerName;
+    private string _customerNames;
     private List<Address> _address = new List<Address>();
 
-    public Customer(string customerName)
+    public Customer(string customerNames)
     {
-        _customerName = customerName;
+        _customerNames = customerNames;
     }
 
-    public Customer(string customerName, List<Address> address)
+    public Customer(string customerNames, List<Address> address)
     {
-        _customerName = customerName;
+        _customerNames = customerNames;
         _address = address;
     }
 
     public void GetCustomerName()
     {
-        Console.WriteLine($"Orderd by: {_customerName}");
+        Console.WriteLine($"Orderd by: {_customerNames}");
     }
 }

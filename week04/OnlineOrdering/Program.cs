@@ -71,13 +71,13 @@ class Program
         //Customer 2
 
         // Customer object
-        Customer customerName2 = new Customer("James Smith");
+        Customer customerNameTwo = new Customer("James Smith");
         
         // Address object
-        Address address2 = new Address("18th Street", "Seattle", "Washingthon", "USA");
+        Address addressTwo = new Address("18th Street", "Seattle", "Washingthon", "USA");
 
         // Order object
-        Order customerOrder2 = new Order("US-PK-G23976", "CA-NB-A54782");
+        Order customerOrderTwo = new Order("US-PK-G23976", "CA-NB-A54782");
 
         // Products object
         Products productInfo3 = new Products("Giant Water Filter", 9843, 1200.25, 8, 5);
@@ -90,15 +90,15 @@ class Program
         
         // Adding address to address list
         List<Address> customerAddress2 = new List<Address>();
-        customerAddress2.Add(address2);
+        customerAddress2.Add(addressTwo);
         
         // Adding order to order list
         List<Order> labels2 = new List<Order>();
-        labels2.Add(customerOrder2);
+        labels2.Add(customerOrderTwo);
 
         // Adding customer to customer list
         List<Customer> secondCustomer = new List<Customer>();
-        secondCustomer.Add(customerName2);
+        secondCustomer.Add(customerNameTwo);
 
         foreach(Products products2 in allProducts2)
         {

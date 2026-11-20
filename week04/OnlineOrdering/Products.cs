@@ -16,13 +16,13 @@ public class Products
         _quantity = 0;
     }
 
-    public Products(string name, int productId, double price, int quantity, int shippingFee)
+    public Products(string name, int productId, double price, int quantity, int customerShippingFee)
     {
         _name = name;
         _productId = productId;
         _price = price;
         _quantity = quantity;
-        _shippingFee = shippingFee;
+        _shippingFee = customerShippingFee;
     }
 
     public string Display()

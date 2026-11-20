@@ -33,10 +33,10 @@ public class Address
         Console.WriteLine($"Country: {_country}, \nCity: {_city}, \nStreet Address: {_streetAddress}");
     }
 
-    public void GetCountry()
-    {
-        Console.WriteLine($"{_country}");
-    }
+    // public void GetCountry()
+    // {
+    //     Console.WriteLine($"{_country}");
+    // }
 
     public void GetFullAddress()
     {

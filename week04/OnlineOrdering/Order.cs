@@ -6,36 +6,36 @@ public class Order
     private List<Products> _productsInfo = new List<Products>();
     private List<Customer> _customerInfo = new List<Customer>();
 
-    private string _packingLabel;
-    private string _shippingLabel;
+    private string _packingLabels;
+    private string _shippingLabels;
 
     public Order()
     {
-        _packingLabel = "";
-        _shippingLabel = "";
+        _packingLabels = "";
+        _shippingLabels = "";
     }
 
-    public Order(string packingLabel, string shippingLabel)
+    public Order(string packingLabels, string shippingLabels)
     {
-        _packingLabel = packingLabel;
-        _shippingLabel = shippingLabel;
+        _packingLabels = packingLabels;
+        _shippingLabels = shippingLabels;
     }
-    public Order(List<Products> productsInfo, List<Customer> customerInfo, string packingLabel, string shippingLabel)
+    public Order(List<Products> productsInfo, List<Customer> customerInfo, string packingLabels, string shippingLabels)
     {
         _productsInfo = productsInfo;
         _customerInfo = customerInfo;
-        _packingLabel = packingLabel;
-        _shippingLabel = shippingLabel;
+        _packingLabels = packingLabels;
+        _shippingLabels = shippingLabels;
     }
 
     public string PackingLabel()
     {
-        return $"Packing Label: {_packingLabel}";
+        return $"Packing Label: {_packingLabels}";
     }
 
     public string ShippingLabel()
     {
-        return $"Shipping Label: {_shippingLabel}";
+        return $"Shipping Label: {_shippingLabels}";
     }
 
 }
