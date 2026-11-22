@@ -1,21 +1,29 @@
+using System.Net.Sockets;
+
 public class Customer
 {
-    private string _customerNames;
-    private List<Address> _address = new List<Address>();
+    private string _customerName;
 
-    public Customer(string customerNames)
+   private Address _address;
+
+   public Customer(string customerName)
     {
-        _customerNames = customerNames;
+        _customerName = customerName;
     }
 
-    public Customer(string customerNames, List<Address> address)
+   public Customer(string customerName, Address address)
     {
-        _customerNames = customerNames;
+        _customerName = customerName;
         _address = address;
     }
 
-    public void GetCustomerName()
+    public bool Country()
     {
-        Console.WriteLine($"Orderd by: {_customerNames}");
+        return _address.GetCountry();
+    }
+
+    public string DisplayCustomer()
+    {
+        return $"Customer: {_customerName} \n{_address.DisplayAddress()}";
     }
 }
