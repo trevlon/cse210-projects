@@ -1,57 +1,30 @@
-public class Products
+using System.Numerics;
+
+public class Product
 {
     private string _name;
-    private int _productId;
+    private string _productId;
     private double _price;
+    private double _quantity;
 
-    private int _quantity;
-
-    private int _shippingFee;
-
-    public Products()
-    {
-        _name = "";
-        _productId = 0;
-        _price = 0;
-        _quantity = 0;
-    }
-
-    public Products(string name, int productId, double price, int quantity, int customerShippingFee)
+    public Product(string name, string productId, double price, double quantity)
     {
         _name = name;
         _productId = productId;
         _price = price;
         _quantity = quantity;
-        _shippingFee = customerShippingFee;
     }
 
-    public string Display()
+    public double GetTotalCost()
     {
-        return $"Name of product: {_name}, \nProduct Id: {_productId}";
+        return _price * _quantity;
     }
 
-    public double DisplayPrice()
+    public string DisplayProduct()
     {
-        return _price;
-    }
-
-    public int DisplayQuantity()
-    {
-        return _quantity;
-    }
-
-    public double DisplayTotalCost()
-    {
-        Address country = new Address();
-        // double totalCost = _price * _quantity;
-        // return $"Total Cost: {totalCost}";
-
-        return (_price + _shippingFee) * _quantity;
-    }
-
-    public void ShippingFee()
-    {
-        Console.WriteLine($"Shipping Fee: {_shippingFee}");
+        return $"Name: {_name} \nProduct ID: {_productId} \nPrice of one: {_price} \nQuantity: {_quantity}";
     }
 
 }
+
+  
