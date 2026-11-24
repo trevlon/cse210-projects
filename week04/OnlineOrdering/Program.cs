@@ -23,26 +23,33 @@ class Program
         Customer customer = new Customer("Jerry Flin", address);
         // Console.WriteLine(customer.DisplayCustomer());
 
-        Order orderList = new Order(customer, product, "US-UV-T12345", "EN-AH-N19875");
-        Order orderList2 = new Order(customer, product2, "US-UV-T12345", "EN-AH-N19875");
+        List<Product> productList = new List<Product>();
+        productList.Add(product);
+        productList.Add(product2);
+    
+        // Order orderList = new Order(customer, productList, "US-UV-T12345", "EN-AH-N19875");
+        Order orderList = new Order(customer, productList);
         orderList.DisplayAll();
         Console.WriteLine();
-        orderList2.DisplayAll();
-        Console.WriteLine();
+        Console.WriteLine(orderList.PackingLabel());
+        Console.WriteLine(orderList.ShippingLabel());
 
         // Customer 2
         Product product3 = new Product("Giant Water Filter", "9843", 1200.25, 8);
         Product product4 = new Product("Ergonomic Office Chairs", "2512", 800.00, 20);
 
-        Address address1 = new Address("18th Street", "Seattle", "Washingthon", "USA");
+        Address address2 = new Address("18th Street", "Seattle", "Washingthon", "USA");
 
-        Customer customer1 = new Customer("James Smith", address1);
+        Customer customer2 = new Customer("James Smith", address2);
 
-        Order orderList3 = new Order(customer1, product3, "US-PK-G23976", "US-NB-A54782");
-        Order orderList4 = new Order(customer1, product4, "US-PK-G23976", "US-NB-A54782");
-        orderList3.DisplayAll();
+        List<Product> productList2 = new List<Product>();
+        productList2.Add(product3);
+        productList2.Add(product4);
+
+        Order orderList2 = new Order(customer2, productList2);
+        orderList2.DisplayAll();
         Console.WriteLine();
-        orderList4.DisplayAll();
-
+        Console.WriteLine(orderList2.PackingLabel());
+        Console.WriteLine(orderList2.ShippingLabel());
     }
 }

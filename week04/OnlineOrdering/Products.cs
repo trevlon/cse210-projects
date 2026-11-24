@@ -20,6 +20,11 @@ public class Product
         return _price * _quantity;
     }
 
+     public string DisplayProductLimited()
+    {
+         return $"Name: {_name} \nProduct ID: {_productId}";
+    }
+
     public string DisplayProduct()
     {
         return $"Name: {_name} \nProduct ID: {_productId} \nPrice of one: {_price} \nQuantity: {_quantity}";
