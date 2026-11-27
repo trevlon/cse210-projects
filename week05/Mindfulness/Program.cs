@@ -3,6 +3,8 @@
 
   Exceeding Expectations: Made a rating system out of 10, if the user type a number greater than 10, then a message will be displayed,
   saying to stay within the range, this statement will repeat until they enter a rating within the range of 10.
+
+  Please Note: I DID NOT write code for whether the user left the ratings field empty or if they type a decimal number for the ratings.
 */
 using System;
 using System.Diagnostics;
@@ -21,7 +23,7 @@ class Program
 
         // Breathe breathe = new Breathe("Breathe Activity", "Breathe in and out excercise", 3000);
         // breathe.Run();
-       
+        //Console.WriteLine();
 
         List<string> promptsList = new List<string>();
         promptsList.Add("--Think about a time you stood up for someone else.--");

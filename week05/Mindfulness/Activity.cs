@@ -40,9 +40,10 @@ public class Activity
 
             ratings = int.Parse(Console.ReadLine());
 
-            // Console.WriteLine($"You've rated the breathing activity {ratings} out of 10");
-            // Console.WriteLine(); 
+
+
         
+        // Warning message if user rating is not within the range of 10
         if(ratings > 10)
         {
             Console.WriteLine("Please stay within the range of 10");
