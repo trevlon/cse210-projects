@@ -21,6 +21,7 @@ class Program
 
         // Breathe breathe = new Breathe("Breathe Activity", "Breathe in and out excercise", 3000);
         // breathe.Run();
+        // Console.WriteLine();
 
         List<string> promptsList = new List<string>();
         promptsList.Add("--Think about a time you stood up for someone else.--");

@@ -57,6 +57,7 @@ public class Reflecting:Activity
         // make random object
         Random question = new Random();
 
+        // To get the end of duration
         DateTime endTime = DateTime.Now.AddSeconds(userDurationTime);
 
         // Display random prompts until specified time by user ends
