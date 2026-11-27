@@ -36,7 +36,7 @@ public class Breathe:Activity
         Console.WriteLine("Get Ready...");
         ShowSpinner();
 
-        // To get the end of duration
+       
         DateTime endTime = DateTime.Now.AddSeconds(userDurationTime);
 
         while(DateTime.Now < endTime)

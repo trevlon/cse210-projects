@@ -44,7 +44,7 @@ public class Listing:Activity
         GetRandomPrompt();
         GetListFromUser();
         
-        // To get the end of duration
+        
         DateTime endTime = DateTime.Now.AddSeconds(userDurationTime);
 
         while(DateTime.Now < endTime)
